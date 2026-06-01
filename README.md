@@ -70,4 +70,4 @@
   - Сборка `#9` зафейлилась т.к. возникла путаница с ветками в IDE после мёржа. Поправил и сборка `#11` прошла успешно  
     ![img_14.png](img_14.png)  
     ![img_15.png](img_15.png)  
-- Проверил, что конфигурация в [репозитории](https://github.com/AlexanderSerg-jun/example-teamcity/tree/master/.teamcity) содержит все настройки конфигурации из teamcity
+- Проверил, что конфигурация в [репозитории](https://github.com/AlexanderSerg-jun/example-teamcity/) содержит все настройки конфигурации из teamcity
