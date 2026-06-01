@@ -14,17 +14,17 @@
 1-4  В Yandex Cloud создайл новые инстансы (4CPU4RAM) на основе образа jetbrains/teamcity-server и jetbrains/teamcity-agent,
 выполнил первоначальную настройку, авторизовал агент:
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/0-VM%20Yandex.png) 
+![image.jpg](0-VM%20Yandex.png) 
 
 4) Авторизовал агент
 
-![image.jpg](https://github.com/AlexanderSerjun/Teamcity/blob/main/1%20-%20agent.png) 
+![image.jpg](1%20-%20agent.png) 
 
 
-5) Создал VM (2CPU4RAM) и запустите [playbook](playbook.png)
+5) Создал VM (2CPU4RAM) и запустите [playbook]
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcityblob/main/1%20Playbook.png) 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/2-Nexus.png) 
+![image.jpg](playbook.png) 
+![image.jpg](2-Nexus.png) 
 
 
 ### Основная часть
