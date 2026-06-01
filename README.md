@@ -4,7 +4,7 @@
 2. Дождитесь запуска teamcity, выполните первоначальную настройку
 3. Создайте ещё один инстанс(2CPU4RAM) на основе образа `jetbrains/teamcity-agent`. Пропишите к нему переменную окружения `SERVER_URL: "http://<teamcity_url>:8111"`
 4. Авторизуйте агент
-5. Сделайте fork [репозитория](https://github.com/aragastmatb/example-teamcity)
+5. Сделайте fork [репозитория](https://github.com/AlexanderSerg-jun/example-teamcity)
 6. Создать VM (2CPU4RAM) и запустить [playbook](09-ci-05-teamcity/src/infrastructure)
 
 ## Основная часть
@@ -34,40 +34,40 @@
 - Создал инстансы teamcity и nexus
   - В docker-compose.yml внёс дополнительно `user: root:root` иначе контейнер не запускался с ошибками доступа к каталогам
 - Авторизовал агента  
-    ![img.png](09-ci-05-teamcity/img/img.png)
+    ![img.png](img.png)
 - Сделал fork [репозитория](https://github.com/AlexanderSerg-jun/example-teamcity)  
 - Создал новый проект в teamcity на основе fork  
-    ![img_1.png](09-ci-05-teamcity/img/img_1.png)
+    ![img_1.png](img_1.png)
 - Сделал autodetect конфигурации  
-    ![img_2.png](09-ci-05-teamcity/img/img_2.png)
+    ![img_2.png](img_2.png)
 - Запустил первую сборку master  
-    ![img_3.png](09-ci-05-teamcity/img/img_3.png)
+    ![img_3.png](img_3.png)
 - Поменял условия сборки  
-    ![img_4.png](09-ci-05-teamcity/img/img_4.png)
+    ![img_4.png](img_4.png)
 - Загрузил settings.xml в набор конфигураций maven  
-    ![img_5.png](09-ci-05-teamcity/img/img_5.png)
+    ![img_5.png](img_5.png)
 - Поправил pom.xml
 - Запустил сборку по master  
-    ![img_6.png](09-ci-05-teamcity/img/img_6.png)
+    ![img_6.png](img_6.png)
 - Артефакт появился в nexus  
-    ![img_7.png](09-ci-05-teamcity/img/img_7.png)
+    ![img_7.png](img_7.png)
 - Мигрировал `build configuration` в репозиторий  
-    ![img_8.png](09-ci-05-teamcity/img/img_8.png)
+    ![img_8.png](img_8.png)
 - Создал отдельную ветку `feature/add_reply` в репозитории  
-    ![img_9.png](09-ci-05-teamcity/img/img_9.png)
+    ![img_9.png](img_9.png)
 - Написал новый метод `sayAttention` для класса Welcomer
 - Дополнил тест для нового метода
 
 - Сборка самостоятельно запустилась, тесты прошли успешно  
-    ![img_10.png](09-ci-05-teamcity/img/img_10.png)  
-    ![img_11.png](09-ci-05-teamcity/img/img_11.png)  
+    ![img_10.png](img_10.png)  
+    ![img_11.png](img_11.png)  
 - Сделал [Pull requests](https://github.com/danilabar/example-teamcity/pull/1) в `master`  
 - Убедился, что нет собранного артефакта в сборке по ветке `master`  
-    ![img_12.png](09-ci-05-teamcity/img/img_12.png)
+    ![img_12.png](img_12.png)
 - Настроил конфигурацию, чтобы она собирала `.jar` в артефакты сборки  
-    ![img_13.png](09-ci-05-teamcity/img/img_13.png)
+    ![img_13.png](img_13.png)
 - Провёл повторную сборку мастера, она прошла успешно и артефакты собраны
   - Сборка `#9` зафейлилась т.к. возникла путаница с ветками в IDE после мёржа. Поправил и сборка `#11` прошла успешно  
-    ![img_14.png](09-ci-05-teamcity/img/img_14.png)  
-    ![img_15.png](09-ci-05-teamcity/img/img_15.png)  
+    ![img_14.png](img_14.png)  
+    ![img_15.png](img_15.png)  
 - Проверил, что конфигурация в [репозитории](https://github.com/AlexanderSerg-jun/example-teamcity/tree/master/.teamcity) содержит все настройки конфигурации из teamcity
