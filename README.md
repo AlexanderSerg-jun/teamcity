@@ -57,19 +57,19 @@
 
 2) Сделал autodetect конфигурации:
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/2-autodetect.png) 
+![image.jpg](2-autodetect.png) 
 
 3) Сохранил необходимые шаги, запустил первую сборку master:
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/3-сборка.png)
+![image.jpg](3-сборка.png)
 
 4) Поменял условия сборки: если сборка по ветке master, то должен происходит mvn clean deploy, иначе mvn clean test.
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/4-условие%20сбрки.png)
+![image.jpg](4-условие%20сбрки.png)
 
 5) Для deploy будет загрузил settings.xml в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/5%20сборка.png)
+![image.jpg](5%20сборка.png)
 
 6) В pom.xml поменял ссылки на репозиторий и nexus:  
 
@@ -133,7 +133,7 @@
 
 7) Запустил сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus:
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/6%20Nexus%20.png)
+![image.jpg](6%20Nexus%20.png)
 
 8) Мигрировал build configuration в репозиторий.
 
