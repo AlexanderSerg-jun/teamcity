@@ -21,7 +21,7 @@
 ![image.jpg](https://github.com/AlexanderSerjun/Teamcity/blob/main/1%20-%20agent.png) 
 
 
-5) Создал VM (2CPU4RAM) и запустите [playbook]
+5) Создал VM (2CPU4RAM) и запустите [playbook](playbook.png)
 
 ![image.jpg](https://github.com/AlexanderSerg-jun/teamcityblob/main/1%20Playbook.png) 
 ![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/2-Nexus.png) 
@@ -53,7 +53,7 @@
 
 1) Создал новый проект на основе fork:
 
-![image.jpg](https://github.com/AlexanderSerg-jun/teamcity/blob/main/1-fork.png) 
+![image.jpg](url.png) 
 
 2) Сделал autodetect конфигурации:
 
